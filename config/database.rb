@@ -10,7 +10,7 @@ configure do
       database: "db/db.sqlite3"
     }
   else
-    db_url = 'https://git.heroku.com/biancaportfolio.git'
+    db_url = 'postgres://ticjydzlfztlkh:5e8b4db1ec65b2194741478408d21c8514e40341274f8a47b8944292fe22b4a7@ec2-52-45-73-150.compute-1.amazonaws.com:5432/d3khllnoi8btv1'
     db = URI.parse(ENV['DATABASE_URL'] || db_url)
     set :database, {
       adapter: "postgresql",
